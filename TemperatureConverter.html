@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <style type="text/css">
+
+        body {
+            background-color: #99cfe1;
+        }
+
+        fieldset {
+            border: dashed;
+            margin-left: 20em;
+            margin-bottom: 20em;
+            margin-right: 20em;
+        }
+
+        h2 {
+            margin-left: 10em;
+        }
+
+        img {
+            float: right;
+            padding-top: 12em;
+
+        }
+
+        #left {
+            float: left;
+            padding-top: 5em;
+        }
+        
+
+
+    </style>
+    <script src="TemperatureConverter.js"></script>
+</head>
+
+<body>
+<h2> Temperature Converter:</h2>
+<fieldset>
+<legend>Click one of the buttons below to begin: </legend>
+
+  <form method="post">
+        <img src="transparentthermometer.png" alt="thermometer" height="200" width="200">
+<div>
+<p>
+    <input type="text" class="celsius" id="c" name="celsius" onkeyup="convert('C')" placeholder="Enter Degrees">
+    <label for="c">degrees Celsius</label>
+
+    <br>
+
+
+
+</p>
+        equals
+        <br>
+<p>
+    <input type="text" class="fahrenheit" id="f" name="fahrenheit" onkeyup="convert('F')" placeholder="Enter Degrees">
+    <label for="f">degrees Fahrenheit</label>
+        <br>
+</div>
+    <img src="transparentthermhot.png" alt="thermhot" id="left" height="200" width="200">
+
+</p>
+
+    </form>
+</fieldset>
+</body>
+</html>
